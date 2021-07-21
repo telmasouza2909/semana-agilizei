@@ -1,17 +1,17 @@
-# depedencias
+# dependencias
 node_modules/
 
-# relatorios mocha
+# relatórios mocha
 mochawesome-report
 
-#relatorios cucumber
+# relatórios cucumber
 cypress/reports/index.html
 cypress/reports/index.html.json
 cypress/reports/cucumber-json/**
 
-# video
+# videos
 cypress/videos
 
 # outros
 .DS_Store
-
+.vscode

@@ -1,32 +1,25 @@
-// steps passos comuns a mais de uma features
-
 Given(/^que acesso o site$/, () => {
-    //rotas
-    //api/1/databases/userdetails/collections/newtable
-    //api/1/databases/userdetails/collections/usertable
-    ///api/1/databases/userdetails/collections/usertable
-    cy.server()
-    cy.route({
+  cy.server()
+  cy.route({
       method: 'POST',
       url: '**/api/1/databases/userdetails/collections/newtable?**',
       status: 200,
       response: {}
-    }).as('postNewtable');
-    
-    cy.route({
-        method: 'POST', 
-        url: '**/api/1/databases/userdetails/collections/usertable?**', 
-        status: 200, 
-        response: {}
-      }).as('postUsertable');
-    
-    cy.route({
+  }).as('postNewtable');
+
+  cy.route({
+      method: 'POST',
+      url: '**/api/1/databases/userdetails/collections/usertable?**',
+      status: 200,
+      response: {}
+  }).as('postUsertable');
+
+  cy.route({
       method: 'GET',
       url: '**/api/1/databases/userdetails/collections/newtable?**',
       status: 200,
       response: {}
-      }).as('getNewtable');
+  }).as('getNewtable');
 
-    cy.visit('Register.html');
-
+  cy.visit('Register.html');
 });

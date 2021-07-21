@@ -1,16 +1,14 @@
 #language: pt
 Funcionalidade: Listagem
+    Como usuário, desejo acessar a listagem
+    Para que possa visualizar meus dados de cadastro
 
-Como usuário, desejo acessar a Listagem
-Para que possa visualizar meus dados de cadastro
+Cenário: Listagem sem registros
+    Dado que o site não possua registros
+    Quando acessar a listagem
+    Então devo visualizar a listagem vazia
 
-Cenario: Listagem sem registros
-    Dado que o site não possui registros
-    Quando acessar a listagens
-    Então devo visualizar a listagens vazia
-
-Cenario: Listagem com apenas um registro
-    Dado que o site possui apenas um registro
-    Quando acessar a listagem 
+Cenário: Listagem com apenas um registros
+    Dado que o site possua apenas um registro
+    Quando acessar a listagem
     Então devo visualizar apenas um registro
-

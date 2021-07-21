@@ -1,4 +1,4 @@
-const reporter = require('cucumber-html-reporter')
+const reporter = require('cucumber-html-reporter');
 
 const options = {
     theme: 'bootstrap',
@@ -8,7 +8,7 @@ const options = {
     scenarioTimestamp: true,
     launchReport: true,
     metadata: {
-        "App Name":"Demo Automation",
+        "App Name": "Demo Automation",
         "Test Environment": "STAGING",
         "Browser": "Electron",
         "Platform": "Windows 10",
@@ -16,5 +16,4 @@ const options = {
     }
 };
 
-reporter.generate(options)
-
+reporter.generate(options);
