@@ -4,9 +4,9 @@ const options = {
     theme: 'bootstrap',
     jsonDir: 'cypress/reports/cucumber-json',
     output: 'cypress/reports/index.html',
-    reportSuiteAsScenarios: true,
-    scenarioTimestamp: true,
-    launchReport: true,
+    reportSuiteAsScenarios: false,
+    scenarioTimestamp: false,
+    launchReport: false,
     metadata: {
         "App Name": "Demo Automation",
         "Test Environment": "STAGING",
