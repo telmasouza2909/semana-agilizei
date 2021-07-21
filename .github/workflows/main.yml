@@ -4,11 +4,15 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
+  # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
+  schedule:
+  # agendamento do cron, executando aos sabados, comecando as 02h até as 05 e de hora em hora
+  # 1) sabado, 02h -> 2) sabado, 03h -> 3) sabado, 04h -> 4) sabado, 05h
+  - cron:  '0 2-5 * * 6'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -19,36 +23,35 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+
     strategy:
-        matrix:
-         node-version: [12.x]
-      # Steps represent a sequence of tasks that will be executed as part of the job
+      matrix:
+        node-version: [12.x]
+   
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checkout do codigo do projeto
+      # Checks-out do codigo do projeto
       - uses: actions/checkout@v2
       
-      # Setup do Node JS
-      - name: Setup Node.js enviroment
-        uses: actions/setup-node@v2.1.5
+      # Setup do Node.js
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.2.0
         with:
-            node-version: ${{ matrix.node-version }}
-            
-      # Instalando as dependencias
+          node-version: ${{ matrix.node-version }}
+      
+      # instalando as dependecias
       - run: npm install
       
       # executar os testes usando o cucumber
-      - run: npm run cy:run:cucumber
+      - run: npm run cy:run:cc
       
-      # gerar o relatorio em html
-      - run: npm run report:cucumber
+      # gerar relatorio em html
+      - run: npm run report:cc
       
       # publicar relatorio em html
-      - name: Deploy to GithubPages
-        uses: JamesIves/github-pages-deploy-action@3.5.9
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: cypress/reports
-            
-
-        
+          token: ${{ github.token }}
+          branch: gh-pages
+          folder: cypress/reports
