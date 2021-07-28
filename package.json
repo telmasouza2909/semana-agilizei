@@ -21,7 +21,7 @@
     "cucumber": "^4.2.1",
     "cucumber-html-reporter": "^5.4.0",
     "cypress": "^7.6.0",
-    "cypress-cucumber-preprocessor": "^1.19.2",
+    "cypress-cucumber-preprocessor": "^4.2.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-multi-reporters": "^1.5.0",
     "mocha": "^9.0.1",
@@ -39,6 +39,7 @@
     }
   },
   "dependencies": {
-    "@cypress/react": "^5.9.2"
+    "@cypress/react": "^5.9.2",
+    "express": "github:visionmedia/express"
   }
 }
