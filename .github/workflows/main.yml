@@ -43,11 +43,11 @@ jobs:
       - run: npm install
 
       # executar os testes usando o headless
-      - run: npm run cy:run
+      - run: npm run cy:run:cucumber
         continue-on-error: true
 
       # executando os comando para gerar relatorios --npm run report
-      - run: report:mocha
+      - run: npm run report:cucumber
 
       # publicar relatorio em html
       - name: Deploy to GitHub Pages
