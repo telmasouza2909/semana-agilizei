@@ -46,8 +46,8 @@ jobs:
       - run: npm run cy:run
         continue-on-error: true
 
-      # executando os comando para gerar relatorios
-      - run: npm run report
+      # executando os comando para gerar relatorios --npm run report
+      - run: report:mocha
 
       # publicar relatorio em html
       - name: Deploy to GitHub Pages
