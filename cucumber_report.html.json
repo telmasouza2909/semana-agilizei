@@ -1,0 +1,151 @@
+[
+  {
+    "description": "    Como usuário, desejo realizar um Cadastro\n    Para que possa acessar o sistema",
+    "keyword": "Funcionalidade",
+    "name": "Cadastro",
+    "line": 3,
+    "id": "cadastro",
+    "tags": [],
+    "uri": "Cadastro.feature",
+    "elements": [
+      {
+        "id": "cadastro;cadastro-de-novo-usuário",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Cadastro de novo usuário",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que acesso o site",
+            "result": {
+              "status": "failed",
+              "duration": 1500000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nRegister.html\n\nWe failed looking for this file at the path:\n\n/Projetos/semana-agilizei/Register.html\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n    at http://localhost:49232/__cypress/runner/cypress_runner.js:140455:25\n    at visitFailedByErr (http://localhost:49232/__cypress/runner/cypress_runner.js:139830:12)\n    at http://localhost:49232/__cypress/runner/cypress_runner.js:140435:13\n    at tryCatcher (http://localhost:49232/__cypress/runner/cypress_runner.js:10798:23)\n    at Promise._settlePromiseFromHandler (http://localhost:49232/__cypress/runner/cypress_runner.js:8733:31)\n    at Promise._settlePromise (http://localhost:49232/__cypress/runner/cypress_runner.js:8790:18)\n    at Promise._settlePromise0 (http://localhost:49232/__cypress/runner/cypress_runner.js:8835:10)\n    at Promise._settlePromises (http://localhost:49232/__cypress/runner/cypress_runner.js:8911:18)\n    at _drainQueueStep (http://localhost:49232/__cypress/runner/cypress_runner.js:5505:12)\n    at _drainQueue (http://localhost:49232/__cypress/runner/cypress_runner.js:5498:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:49232/__cypress/runner/cypress_runner.js:5514:5)\n    at Async.drainQueues (http://localhost:49232/__cypress/runner/cypress_runner.js:5384:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:49232/__cypress/tests?p=cypress\\integration\\All.features:194:6)\n    at Context.resolveAndRunStepDefinition (http://localhost:49232/__cypress/tests?p=cypress\\integration\\All.features:18440:9)\n    at Context.eval (http://localhost:49232/__cypress/tests?p=cypress\\integration\\All.features:17769:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 10,
+            "name": "informar meus dados",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 11,
+            "name": "Salvar",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 12,
+            "name": "devo ser cadastrado com sucesso",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "Como usuário, desejo acessar a Listagem\nPara que possa visualizar meus dados de cadastro",
+    "keyword": "Funcionalidade",
+    "name": "Listagem",
+    "line": 2,
+    "id": "listagem",
+    "tags": [],
+    "uri": "Listagem.feature",
+    "elements": [
+      {
+        "id": "listagem;listagem-sem-registros",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Listagem sem registros",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que o site não possui registros",
+            "result": {
+              "status": "passed",
+              "duration": 1850000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 9,
+            "name": "acessar a listagens",
+            "result": {
+              "status": "failed",
+              "duration": 998000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nWebTable.html\n\nWe failed looking for this file at the path:\n\n/Projetos/semana-agilizei/WebTable.html\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n    at http://localhost:49232/__cypress/runner/cypress_runner.js:140455:25\n    at visitFailedByErr (http://localhost:49232/__cypress/runner/cypress_runner.js:139830:12)\n    at http://localhost:49232/__cypress/runner/cypress_runner.js:140435:13\n    at tryCatcher (http://localhost:49232/__cypress/runner/cypress_runner.js:10798:23)\n    at Promise._settlePromiseFromHandler (http://localhost:49232/__cypress/runner/cypress_runner.js:8733:31)\n    at Promise._settlePromise (http://localhost:49232/__cypress/runner/cypress_runner.js:8790:18)\n    at Promise._settlePromise0 (http://localhost:49232/__cypress/runner/cypress_runner.js:8835:10)\n    at Promise._settlePromises (http://localhost:49232/__cypress/runner/cypress_runner.js:8911:18)\n    at _drainQueueStep (http://localhost:49232/__cypress/runner/cypress_runner.js:5505:12)\n    at _drainQueue (http://localhost:49232/__cypress/runner/cypress_runner.js:5498:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:49232/__cypress/runner/cypress_runner.js:5514:5)\n    at Async.drainQueues (http://localhost:49232/__cypress/runner/cypress_runner.js:5384:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:49232/__cypress/tests?p=cypress\\integration\\All.features:144:6)\n    at Context.resolveAndRunStepDefinition (http://localhost:49232/__cypress/tests?p=cypress\\integration\\All.features:18440:9)\n    at Context.eval (http://localhost:49232/__cypress/tests?p=cypress\\integration\\All.features:17769:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 10,
+            "name": "devo visualizar a listagens vazia",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "listagem;listagem-com-apenas-um-registro",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Listagem com apenas um registro",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 13,
+            "name": "que o site possui apenas um registro",
+            "result": {
+              "status": "passed",
+              "duration": 142000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 14,
+            "name": "acessar a listagem",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nWebTable.html\n\nWe failed looking for this file at the path:\n\n/Projetos/semana-agilizei/WebTable.html\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n    at http://localhost:49232/__cypress/runner/cypress_runner.js:140455:25\n    at visitFailedByErr (http://localhost:49232/__cypress/runner/cypress_runner.js:139830:12)\n    at http://localhost:49232/__cypress/runner/cypress_runner.js:140435:13\n    at tryCatcher (http://localhost:49232/__cypress/runner/cypress_runner.js:10798:23)\n    at Promise._settlePromiseFromHandler (http://localhost:49232/__cypress/runner/cypress_runner.js:8733:31)\n    at Promise._settlePromise (http://localhost:49232/__cypress/runner/cypress_runner.js:8790:18)\n    at Promise._settlePromise0 (http://localhost:49232/__cypress/runner/cypress_runner.js:8835:10)\n    at Promise._settlePromises (http://localhost:49232/__cypress/runner/cypress_runner.js:8911:18)\n    at _drainQueueStep (http://localhost:49232/__cypress/runner/cypress_runner.js:5505:12)\n    at _drainQueue (http://localhost:49232/__cypress/runner/cypress_runner.js:5498:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:49232/__cypress/runner/cypress_runner.js:5514:5)\n    at Async.drainQueues (http://localhost:49232/__cypress/runner/cypress_runner.js:5384:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:49232/__cypress/tests?p=cypress\\integration\\All.features:159:6)\n    at Context.resolveAndRunStepDefinition (http://localhost:49232/__cypress/tests?p=cypress\\integration\\All.features:18440:9)\n    at Context.eval (http://localhost:49232/__cypress/tests?p=cypress\\integration\\All.features:17769:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 15,
+            "name": "devo visualizar apenas um registro",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
