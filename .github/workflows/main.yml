@@ -46,7 +46,7 @@ jobs:
       - run: npm run cy:run:cc
       
       # gerar relatorio em html
-      - run: npm run report:cc
+      - run: npm run report:cucumber
       
       # publicar relatorio em html
       - name: Deploy to GitHub Pages
