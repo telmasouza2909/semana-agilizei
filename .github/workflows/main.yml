@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
   schedule:
   # agendamento do cron, executando aos sabados, comecando as 02h até as 05 e de hora em hora
   # 1) sabado, 02h -> 2) sabado, 03h -> 3) sabado, 04h -> 4) sabado, 05h
