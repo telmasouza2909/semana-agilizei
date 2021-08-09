@@ -10,7 +10,8 @@
     "cy:run:cc": "npx cypress run --config-file cypress-cucumber.json --spec **/All.features",
     "report:merge": "mochawesome-merge > full_report.json",
     "report:mocha": "marge full_report.json",
-    "report:clean": "rm -rf mochawesome-report full_report.json cypress/reports/cucumber*"
+    "report:clean": "rm -rf mochawesome-report full_report.json cypress/reports/cucumber*",
+    "report:cucumber": "node cypress/reports/reporter.js"
   },
   "keywords": [],
   "author": "",
