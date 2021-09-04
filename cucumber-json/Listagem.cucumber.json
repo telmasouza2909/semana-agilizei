@@ -23,7 +23,7 @@
             "name": "que o site não possua registros",
             "result": {
               "status": "passed",
-              "duration": 34374000000
+              "duration": 29928000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "acessar a listagem",
             "result": {
               "status": "passed",
-              "duration": 2674000000
+              "duration": 3022000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "devo visualizar a listagem vazia",
             "result": {
               "status": "passed",
-              "duration": 126000000
+              "duration": 37000000
             }
           }
         ]
@@ -63,7 +63,7 @@
             "name": "que o site possua apenas um registro",
             "result": {
               "status": "passed",
-              "duration": 954000000
+              "duration": 441000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "acessar a listagem",
             "result": {
               "status": "passed",
-              "duration": 2772000000
+              "duration": 5195000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "devo visualizar apenas um registro",
             "result": {
               "status": "passed",
-              "duration": 158000000
+              "duration": 59000000
             }
           }
         ]
