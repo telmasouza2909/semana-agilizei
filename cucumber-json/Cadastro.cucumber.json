@@ -23,7 +23,7 @@
             "name": "que acesso o site",
             "result": {
               "status": "passed",
-              "duration": 11814000000
+              "duration": 9054000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "informar meus dados",
             "result": {
               "status": "passed",
-              "duration": 5301000000
+              "duration": 4475000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "salvar os dados",
             "result": {
               "status": "passed",
-              "duration": 8251000000
+              "duration": 7431000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "devo ser cadastrado com sucesso",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 80000000
             }
           }
         ]
